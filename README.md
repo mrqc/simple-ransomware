@@ -1,5 +1,8 @@
 # simple-ransomware
+
 Tried to code a ransomware from the scratch for studying reasons
+
+the scripts require the python package "crypto", install it with: pip install crypto
 
 the presented python scripts are for encryption end decryption of one file
 
