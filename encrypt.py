@@ -19,5 +19,4 @@ cipher = PKCS1_v1_5.new(key.publickey())
 with open(inputFilename + ".enc", "wb") as outputFile:
   for chunkIndex in range(0, int(len(inputContent) / float(chunkSize))):
     outputFile.write(cipher.encrypt(inputContent[(chunkSize * chunkIndex) : (chunkSize * (chunkIndex + 1))]))
-  chunk = inputContent[(int(len(inputContent) / float(chunkSize)) * chunkSize) : (len(inputContent))]
   outputFile.write(cipher.encrypt(inputContent[(int(len(inputContent) / float(chunkSize)) * chunkSize) : (len(inputContent))]))
